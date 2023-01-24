@@ -3,7 +3,8 @@ const productSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        trim: true
+        trim: true,
+        text: true,
     },
     slug: {
         type: String,
@@ -21,7 +22,8 @@ const productSchema = new mongoose.Schema({
     description: {
         type: String,
         required: true,
-        trim: true
+        trim: true,
+        text: true,
     },
     offer: {
         type: Number
